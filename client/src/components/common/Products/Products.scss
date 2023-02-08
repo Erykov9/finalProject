@@ -1,0 +1,17 @@
+.card {
+  margin: 0 auto;
+}
+
+.pad {
+  padding: 15px  0;
+}
+
+.row {
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 770px) {
+  .row {
+    flex-direction: column;
+  }
+}
