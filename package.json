@@ -20,7 +20,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "run": "npm-run-all -l -p run:*",
     "run:server": "nest start --watch",
-    "run:client": "cd client && npm start"
+    "run:client": "cd client && npm install && npm start"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
