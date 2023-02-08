@@ -6,6 +6,8 @@ import SingleProduct from "./components/views/SingleProduct/SingleProduct";
 import {
   useRoutes
 } from "react-router-dom";
+import Footer from "./components/views/Footer/Footer";
+import NotFound from "./components/views/NotFound/NotFound";
 
 
 function App() {
@@ -19,12 +21,17 @@ function App() {
       path: '/products/:id',
       element: <SingleProduct/>
     },
+    {
+      path: '*',
+      element: <NotFound/>
+    }
 
   ])
   return (
     <>
       <Navigation/>
       {routes}
+      <Footer/>
 
     </>
   );

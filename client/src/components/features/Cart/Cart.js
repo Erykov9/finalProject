@@ -59,7 +59,7 @@ const Cart = (props) => {
 
     fetch(ORDER_URL, options)
       .then(res => res.json())
-      .then(res => console.log(res))
+
 
     setTimeout(() => {
       setOrderProgress('order');

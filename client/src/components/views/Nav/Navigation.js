@@ -39,8 +39,8 @@ function Navigation() {
         <Container>
         <Navbar.Brand><NavLink to='/'>ELECTRONIC SHOP</NavLink></Navbar.Brand>
           <Nav className="d-flex  justify-content-end">
-            <Nav.Link><NavLink to='/'>Home</NavLink></Nav.Link>
-            <Nav.Link href="#features">About</Nav.Link>
+            <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
             <Nav variant="pills">
               <Button variant="primary" onClick={handleShow}>
               <AiOutlineShoppingCart/> Cart <Badge bg="secondary">{orderAmount}</Badge>

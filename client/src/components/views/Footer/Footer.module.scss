@@ -1,0 +1,31 @@
+.root {
+  background-color: #212529;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+
+
+  &__contact {
+    display: flex;
+    font-size: 2em;
+    flex-direction: column;
+
+    h3 {
+      margin: 0 auto;
+    }
+
+    &_icons {
+      margin: 0 auto;
+      svg {
+        font-size: 30px;
+        padding: 0 5px;
+      }
+      svg:hover {
+        opacity: 0.6;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
