@@ -26,6 +26,7 @@ const Cart = (props) => {
   const orderAmount = props.order.length;
   const ordersList = useSelector(getOrdersList);
 
+  
   const [orderProgress, setOrderProgress] = useState('order')
   const [email, setEmail] = useState('');
   const [payment, setPayment] = useState('Cash');

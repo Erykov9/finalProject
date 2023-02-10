@@ -4,19 +4,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import ListGroup  from 'react-bootstrap/ListGroup';
-import Alert from 'react-bootstrap/Alert';
+
 
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-import {AiFillDelete} from 'react-icons/ai'
 
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
 
 import { getOrders } from '../../../redux/orderRedux';
 import { useSelector } from 'react-redux';
-import { deleteOrder } from '../../../redux/orderRedux';
 
 import Cart from '../../features/Cart/Cart';
 
@@ -25,7 +21,6 @@ import './Navigation.scss';
 
 function Navigation() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
