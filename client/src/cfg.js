@@ -1,2 +1,2 @@
-export const PRODUCT_URL = (process.env.NODE_ENV === 'production') ? '/api/product' : 'http://localhost:3000/api/product'
-export const ORDER_URL = (process.env.NODE_ENV === 'production') ? '/api/order' : 'http://localhost:3000/api/order'
+export const PRODUCT_URL = (process.env.NODE_ENV !== 'production') ? '/api/product' : 'http://localhost:3000/api/product'
+export const ORDER_URL = (process.env.NODE_ENV !== 'production') ? '/api/order' : 'http://localhost:3000/api/order'
